@@ -1,0 +1,29 @@
+.movie-img {
+    border:solid black 1px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.6;
+  }
+  
+  .movie-img:hover {
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+    border: 3px solid white;
+  }
+
+  .header-container {
+    height: 40vh;
+    background-position: center;
+    background-size: contain;
+    color: white;
+    background-image: url("./assets/backgI.jpg");
+    opacity: 0.9;
+  }
+ 
+  .main-container { 
+    background: rgb(63, 94, 251);
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+  }
