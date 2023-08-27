@@ -4,7 +4,7 @@ import Movies from "./Movies";
 import Filter from "./Filter";
 
 function Home() {
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(1);
   return (
     <>
       <Header />

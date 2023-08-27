@@ -1,11 +1,12 @@
 /* copiado*/
-import ModalFilm from "./MovieModal";
+//import ModalFilm from "./MovieModal";
+
 import { useState } from "react";
 
 function Movie({ movie }) {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+  //const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
@@ -18,9 +19,10 @@ function Movie({ movie }) {
         />
         <p>{movie.vote_average}</p>
       </div>
-      <ModalFilm movie={movie} show={show} handleClose={handleClose} />
     </>
   );
 }
 
 export default Movie;
+
+/*<ModalFilm movie={movie} show={show} handleClose={handleClose} />*/

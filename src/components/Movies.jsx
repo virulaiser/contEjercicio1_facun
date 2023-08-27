@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Movie from "./Movie";
 import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -44,7 +45,9 @@ function Movies({ rating }) {
         <div className="row">
           {movies.map((movie) => (
             <div key={movie.id} className="col-3">
-              <Movie movie={movie} />
+              <Link to={`/movie/${movie.id}`}>
+                <Movie movie={movie} />
+              </Link>
             </div>
           ))}
         </div>
